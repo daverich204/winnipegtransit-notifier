@@ -8,7 +8,7 @@ const client = new WinnipegTransitAPI(API_KEY);
 const producer = kafka.producer();
 
 // You can run this to create a topic programmatically
-const admin = kafka.admin();
+// const admin = kafka.admin();
 // await admin.connect();
 // await admin.createTopics({
 //     topics: [{ topic: KAFKA_TOPIC }],

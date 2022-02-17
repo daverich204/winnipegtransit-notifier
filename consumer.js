@@ -6,8 +6,8 @@ const consumer = kafka.consumer({
 });
 
 const esClient = elasticsearch.Client({
-    host: process.env.ES_HOST,
-    log: 'trace',
+    host: process.env.ES_HOST || 'localhost:9200',
+    // log: 'trace',
     ssl: { rejectUnauthorized: false, pfx: [] },
 });
 
@@ -42,7 +42,7 @@ const main = async () => {
                             stop_number,
                         }
                     }).then(response => {
-                        console.log("INDEX SUCCESSFUL! response => ", response);
+                        console.log("INDEX SUCCESSFUL!"); // response => ", response);
                     }).catch(err => {
                         console.log("ERROR => ", err);
                         process.exit(1);
