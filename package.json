@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "name": "winnipegtransit-notifier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daverich204/winnipegtransit-notifier.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daverich204/winnipegtransit-notifier/issues"
+  },
+  "homepage": "https://github.com/daverich204/winnipegtransit-notifier#readme",
+  "dependencies": {
+    "elasticsearch": "^16.7.2",
+    "kafkajs": "^1.16.0",
+    "winnipegtransitapi": "^0.1.7"
+  }
+}
